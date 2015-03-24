@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000000"
+    android:id="@+id/uiLayout">
+
+    <TextView
+        android:layout_width="140dip"
+        android:layout_height="240dip"
+        android:id="@+id/textViewUpperLeft"
+        android:background="#ff7f7fff"
+        android:layout_marginRight="5dip"
+        android:layout_alignParentEnd="false"
+        android:layout_marginBottom="5dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewLowerLeft"
+        android:background="#ffff7f7f"
+        android:layout_below="@+id/textViewUpperLeft"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/seekBar"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+        android:layout_marginRight="5dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="165dip"
+        android:id="@+id/textViewUpperRight"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_toEndOf="@+id/textViewUpperLeft"
+        android:background="#ffff0000"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@+id/textViewUpperLeft"
+        android:layout_marginBottom="5dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="165dip"
+        android:id="@+id/textViewMiddleRight"
+        android:background="#ffffffff"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_toRightOf="@+id/textViewLowerLeft"
+        android:layout_marginLeft="5dip"
+        android:layout_below="@+id/textViewUpperRight"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="165dip"
+        android:id="@+id/textViewLowerRight"
+        android:background="#ff0000ff"
+        android:layout_below="@+id/textViewMiddleRight"
+        android:layout_above="@+id/seekBar"
+        android:layout_marginTop="5dip"
+        android:layout_alignRight="@+id/seekBar"
+        android:layout_alignEnd="@+id/seekBar"
+        android:layout_toRightOf="@+id/textViewLowerLeft"
+        android:layout_toEndOf="@+id/textViewLowerLeft"
+        android:layout_marginLeft="5dip" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:indeterminate="false" />
+
+</RelativeLayout>
